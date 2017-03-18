@@ -2,7 +2,7 @@
 
 import urllib2
 import cookielib
-#设置保存cookie的文件，同级目录下的cookie.txt
+#设置保存cookie的文件，同级目录下的cookie.txt.
 filename = 'cookie.txt'
 #声明一个MozillaCookieJar对象实例来保存cookie，之后写入文件
 cookie = cookielib.MozillaCookieJar(filename)
