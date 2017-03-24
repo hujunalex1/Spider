@@ -1,15 +1,19 @@
 #coding=utf-8
 
+'''
+发送post请求，通过data参数来传递
+'''
 import requests
-datalist= {}
-datalist['email']='18267200732'
-datalist['password']='xxxx'
-url = "http://www.imooc.com/user/newlogin"
-head = {"Content-Type": "application/Json"}
-
-response = requests.post(url,data=datalist,headers=head)
-
+url ="http://httpbin.org/post"
+data = {'username':'hujun','password':'123456'}
+response = requests.post(url,data=data)
 print response.text
+print response.status_code
+
+
+
+
+
 
 
 
