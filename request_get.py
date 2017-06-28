@@ -3,7 +3,7 @@
 豆瓣获取某个用户的所有图书收藏信息
 
 '''
-import requests #调用requests库
+import requests #调用requests库0
 import json
 url = "https://api.douban.com/v2/book/user/ahbei/collections" #访问豆瓣ahbei收藏图书接口的url地址
 data= {'status':'read','tag':'小说','rating':'5'}
